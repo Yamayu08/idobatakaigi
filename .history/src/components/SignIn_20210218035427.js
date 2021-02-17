@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -46,11 +46,6 @@ export default function SignIn({ setName }) {
   const [disabled, setDisabled] = useState(true);
   const [string, setString] = useState('');
   console.log(string);
-
-  useEffect(() => {
-    const disabled = string === '';
-    setDisabled(disabled);
-  }, [string]);
 
   return (
     <Container component="main" maxWidth="xs">

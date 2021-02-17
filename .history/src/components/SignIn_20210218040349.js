@@ -48,8 +48,7 @@ export default function SignIn({ setName }) {
   console.log(string);
 
   useEffect(() => {
-    const disabled = string === '';
-    setDisabled(disabled);
+    string === '' ? setDisabled(true) : setDisabled(false)
   }, [string]);
 
   return (
