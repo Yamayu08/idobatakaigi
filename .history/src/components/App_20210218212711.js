@@ -6,10 +6,5 @@ export default () => {
   const [name, setName] = useState('');
   console.log({ name });
 
-  if (name === '') {
-    return <SignIn setName={setName} />;
-  } else {
-    return <Main name={name} />
-  }
-
+  return <SignIn setName={setName} />;
 };
