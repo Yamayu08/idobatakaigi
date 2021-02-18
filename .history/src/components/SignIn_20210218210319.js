@@ -78,9 +78,6 @@ export default function SignIn({ setName }) {
             color="primary"
             className={classes.submit}
             disabled={disabled}
-            onClick={() => {
-              setName(string);
-            }}
           >
             はじめる
           </Button>
