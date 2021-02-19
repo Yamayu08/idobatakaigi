@@ -13,7 +13,7 @@ const useStyles = makeStyles({
 
 const MessageInputField = ({ name }) => {
   const classes = useStyles();
-  const avatarPath = gravatarPath(name);
+  const avatarPath = gravatarPath('gipcompany@gmail.com');
   return (
     <div className={classes.root}>
       <Grid container>
