@@ -13,19 +13,19 @@ const useStyles = makeStyles({
 });
 
 const MessageInputField = ({ name }) => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState();
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item={true} xs={1}>
+        <Grid xs={1}>
           <Avatar src={ avatarPath } />
         </Grid>
-        <Grid item={true} xs={10}>
+        <Grid xs={10}>
           <MessageField name={name} setText={setText} text={text} />
         </Grid>
-        <Grid item={true} xs={1}>ボタン</Grid>
+        <Grid xs={1}>ボタン</Grid>
       </Grid>
     </div>
   )
