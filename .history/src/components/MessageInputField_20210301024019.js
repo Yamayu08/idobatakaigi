@@ -33,12 +33,7 @@ const MessageInputField = ({ name }) => {
           />
         </Grid>
         <Grid item xs={1}>
-          <MessageSubmitButton
-            inputEl={inputEl}
-            name={name}
-            setText={setText}
-            text={text}
-            />
+          <MessageSubmitButton name={name} setText={setText} text={text} />
         </Grid>
       </Grid>
     </div>
