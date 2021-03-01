@@ -9,7 +9,6 @@ const useStyles = makeStyles({
   root: {
     gridRow: 1,
     width: '100%',
-    overflow: 'auto',
   },
 });
 
@@ -20,7 +19,7 @@ const MessageList = () => {
   useEffect(() => {
     messagesRef
       .orderByKey()
-      .limitToLast(15)
+      .limitToLast(3)
       .on('value', (snapshot) => {
         const messages = snapshot.val();
         if (messages === null) return;
