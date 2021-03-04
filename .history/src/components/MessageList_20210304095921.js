@@ -41,15 +41,8 @@ const MessageList = () => {
         messages.map(({ key, name, text }, index) => {
           const isLastItem = length === index + 1;
 
-          return (
-            <MessageItem
-              key={key}
-              name={name}
-              text={text}
-              isLastItem={isLastItem}
-            />
-          );
-      })
+          return <MessageItem key={key} name={name} text={text} isLastItem={isLastItem} />;
+        })
       }
     </List>
   );
